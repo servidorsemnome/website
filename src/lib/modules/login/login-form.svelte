@@ -29,7 +29,7 @@
       identifier,
       password,
     });
-    if (data?.session?.active) return goto(returnTo);
+    if (data?.session?.active) return goto(flow?.return_to || returnTo);
 
     if (!data)
       alert = {

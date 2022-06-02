@@ -13,12 +13,11 @@
     const flowId = url.searchParams.get('flow');
     const returnTo = url.searchParams.get('return_to') || '';
 
-    if (!flowId) {
+    if (!flowId)
       return {
         status: 302,
         redirect: getLoginBrowserUrl(returnTo),
       };
-    }
 
     return {};
   };
