@@ -21,21 +21,21 @@
     },
     {
       label: 'Doar',
-      href: '/doar',
+      href: '/donate',
       icon: DiamondIcon,
-      active: $page.url.pathname == '/doar',
+      active: $page.url.pathname == '/donate',
     },
     {
       label: 'Etiqueta',
-      href: '/etiqueta',
+      href: '/rules',
       icon: ScrollIcon,
-      active: $page.url.pathname == '/etiqueta',
+      active: $page.url.pathname == '/rules',
     },
     {
       label: 'Comunidade',
-      href: '/comunidade',
+      href: '/community',
       icon: GroupIcon,
-      active: $page.url.pathname == '/comunidade',
+      active: $page.url.pathname == '/community',
     },
     {
       label: 'Discord',
@@ -60,9 +60,9 @@
   $: dashboardItems = [
     {
       label: username,
-      href: '/painel',
+      href: '/dashboard',
       icon: `https://mc-heads.net/head/${username}`,
-      active: $page.url.pathname.startsWith('/painel'),
+      active: $page.url.pathname.startsWith('/dashboard'),
     },
   ];
 

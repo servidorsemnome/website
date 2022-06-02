@@ -6,7 +6,7 @@
     if (session?.identity) {
       return {
         status: 302,
-        redirect: '/painel',
+        redirect: '/dashboard',
       };
     }
 

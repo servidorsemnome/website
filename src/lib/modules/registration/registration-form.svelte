@@ -21,7 +21,7 @@
   let isLoading = false;
 
   let flowId = $page.url.searchParams.get('flow') || '';
-  let returnTo = $page.url.searchParams.get('return_to') || '/painel';
+  let returnTo = $page.url.searchParams.get('return_to') || '/dashboard';
 
   onMount(async () => {
     flow = await getRegistrationFlow(flowId);
