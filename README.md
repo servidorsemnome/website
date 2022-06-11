@@ -4,7 +4,7 @@
   The official website for SSN.gg, still in heavy development. This includes the landing page, authentication interface, user dashboard and more.
 </p>
 
-| ![](https://i.imgur.com/HsmcpHF.png) | ![](https://i.imgur.com/iD7O5KW.png) |
+| ![](https://i.imgur.com/iD7O5KW.png) | ![](https://i.imgur.com/HsmcpHF.png) |
 |-|-|
 
 ## Installing
