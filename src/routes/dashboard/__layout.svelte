@@ -1,11 +1,12 @@
 <script lang="ts" context="module">
+  import { AUTH_URL } from '$lib/env';
   import type { Load } from '@sveltejs/kit';
 
   export const load: Load = ({ session }) => {
     if (!session?.identity) {
       return {
         status: 302,
-        redirect: '/auth/login',
+        redirect: `${AUTH_URL}/login`,
       };
     }
 

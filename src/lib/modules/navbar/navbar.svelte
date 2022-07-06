@@ -1,6 +1,7 @@
 <script lang="ts">
   import { page } from '$app/stores';
-  import { IDENTITY } from '$lib/modules/ory';
+  import { AUTH_URL } from '$lib/env';
+  import { IDENTITY } from '$lib/modules/kratos';
   import { Navbar } from '$lib/components/navbar';
   import {
     DiamondIcon,
@@ -48,11 +49,11 @@
   const authItems = [
     {
       label: 'Login',
-      href: '/auth/login',
+      href: `${AUTH_URL}/login`,
     },
     {
       label: 'Registrar',
-      href: '/auth/register',
+      href: `${AUTH_URL}/register`,
       isButton: true,
     },
   ];

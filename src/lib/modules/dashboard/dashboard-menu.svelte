@@ -1,7 +1,7 @@
 <script lang="ts">
   import { page } from '$app/stores';
   import { goto } from '$app/navigation';
-  import { getLogoutUrl } from '$lib/modules/ory';
+  import { getLogoutUrl } from '$lib/modules/kratos';
   import { DashboardMenu } from '$lib/components/dashboard';
   import {
     BackpackIcon,

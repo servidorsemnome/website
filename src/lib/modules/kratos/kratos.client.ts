@@ -1,6 +1,6 @@
 import { KRATOS_URL } from '$lib/env';
-import { getNodeAttribute } from './ory.utils';
-import type { LoginParams, RegistrationParams } from './ory.types';
+import { getNodeAttribute } from './kratos.utils';
+import type { LoginParams, RegistrationParams } from './kratos.types';
 
 export const getLoginFlow = async (flowId: string) => {
   try {

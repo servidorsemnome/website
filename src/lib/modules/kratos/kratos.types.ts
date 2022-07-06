@@ -1,12 +1,12 @@
+export type IdentityTraits = {
+  email: string;
+  nicknames: string[];
+  primaryNickname: string;
+}
+
 export type KratosIdentity = {
   id: string;
-  traits: {
-    email: string;
-    name: {
-      first: string;
-      last: string;
-    };
-  };
+  traits: IdentityTraits;
   state: string;
   created_at: string;
   updated_at: string;
@@ -20,11 +20,7 @@ export type LoginParams = {
 };
 
 export type RegistrationParams = {
-  traits: {
-    email: string;
-    nicknames: string[];
-    primaryNickname: string;
-  };
+  traits: IdentityTraits;
   password: string;
   csrf_token?: string;
   method?: string;

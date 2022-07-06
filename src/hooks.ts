@@ -1,4 +1,4 @@
-import { getIdentity } from '$lib/modules/ory';
+import { getIdentity } from '$lib/modules/kratos';
 import type { GetSession, Handle } from '@sveltejs/kit';
 
 export const handle: Handle = async ({ event, resolve }) => {

@@ -11,8 +11,7 @@
 </script>
 
 <script lang="ts">
-  import { page } from '$app/stores';
-  import { IDENTITY } from '$lib/modules/ory';
+  import { IDENTITY } from '$lib/modules/kratos';
   import { Hero } from '$lib/modules/hero';
   import { Navbar } from '$lib/modules/navbar';
   import { Container, Section } from '$lib/components/layout';
@@ -21,18 +20,12 @@
 
   export let identity: any = null;
   $IDENTITY = identity;
-
-  $: isAuthPage = $page.url.pathname.startsWith(`/auth`);
 </script>
 
-{#if !isAuthPage}
-  <Container>
-    <Hero />
-    <Navbar />
-    <Section>
-      <slot />
-    </Section>
-  </Container>
-{:else}
-  <slot />
-{/if}
+<Container>
+  <Hero />
+  <Navbar />
+  <Section>
+    <slot />
+  </Section>
+</Container>
